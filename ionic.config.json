@@ -1,0 +1,7 @@
+{
+  "name": "qrcode-scanner",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
