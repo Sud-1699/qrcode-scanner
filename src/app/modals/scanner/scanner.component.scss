@@ -1,0 +1,11 @@
+.square {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 16px;
+	width: 200px !important;
+	height: 200px !important;
+	border: 6px solid white;
+	box-shadow: 0 0 0 500px rgba($color: #000000, $alpha: 0.3);
+}

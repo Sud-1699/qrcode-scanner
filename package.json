@@ -9,7 +9,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "serve": "ionic serve --p 4200 --no--open",
+    "android-build": "ionic capaciotr build andorid",
+    "ios-build": "ionic capaciotr build ios"
   },
   "private": true,
   "dependencies": {
@@ -21,12 +24,16 @@
     "@angular/platform-browser": "^20.0.0",
     "@angular/platform-browser-dynamic": "^20.0.0",
     "@angular/router": "^20.0.0",
+    "@capacitor-mlkit/barcode-scanning": "^7.3.0",
+    "@capacitor/android": "^7.4.3",
     "@capacitor/app": "7.1.0",
     "@capacitor/core": "7.4.3",
     "@capacitor/haptics": "7.0.2",
     "@capacitor/keyboard": "7.0.3",
     "@capacitor/status-bar": "7.0.3",
+    "@capawesome/capacitor-android-edge-to-edge-support": "^7.2.3",
     "@ionic/angular": "^8.0.0",
+    "@ionic/pwa-elements": "^3.3.0",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

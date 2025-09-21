@@ -1,20 +1,27 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      QR Code Scanner
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div id="container" [class.hidden]="scannerModelOpen">
+    @if (scannedResult) {
+      <ion-label>
+        <span>Result: </span>
+        <h3>
+          {{ scannedResult}}
+        </h3>
+      </ion-label>
+    }
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-button (click)="openScanner()">
+      <ion-label>
+        Open Scanner
+      </ion-label>
+      <ion-icon slot="end" name="scan"></ion-icon>
+    </ion-button>
   </div>
 </ion-content>

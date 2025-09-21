@@ -35,3 +35,18 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+.scanner-active {
+	--background: transparent;
+	--ion-background-color: transparent;
+	display: none;
+}
+
+.scanner-inactive {
+	--background: none;
+	--ion-background-color: none;
+}
+
+.hidden {
+	display: none !important;
+}
